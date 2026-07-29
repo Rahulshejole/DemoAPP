@@ -33,8 +33,18 @@ export default function App() {
 
   // User Profile
   const [profile, setProfile] = useState<UserProfile>(() => {
+    // Always use initialProfile as the base, merge with any saved customizations
     const saved = localStorage.getItem('politcraft_user_profile');
-    return saved ? JSON.parse(saved) : initialProfile;
+    if (saved) {
+      const savedProfile = JSON.parse(saved);
+      // If saved name matches old default, reset to new initialProfile
+      if (savedProfile.name === "सौ. स्नेहा रमेश आंब्रे") {
+        localStorage.removeItem('politcraft_user_profile');
+        return initialProfile;
+      }
+      return savedProfile;
+    }
+    return initialProfile;
   });
 
   // Drafts
