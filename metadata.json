@@ -1,0 +1,8 @@
+{
+  "name": "DesignCraft - Poster Studio",
+  "description": "Ad-free, modern graphic design platform for political campaign posters, business greetings, daily quotes, and festival banners with live canvas editing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
