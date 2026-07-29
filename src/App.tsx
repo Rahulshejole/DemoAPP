@@ -1,5 +1,5 @@
 /**
- * DesignCraft - Poster Studio
+ * PosterForge - Poster Studio
  * Ad-Free, Modern Editorial Redesign Application
  */
 

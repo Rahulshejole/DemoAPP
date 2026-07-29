@@ -196,7 +196,7 @@ export const CanvasEditor: React.FC<CanvasEditorProps> = ({
     setShowExportMenu(false);
     try {
       if (format === 'pdf') {
-        const filename = `DesignCraft_${Date.now()}.pdf`;
+        const filename = `PosterForge_${Date.now()}.pdf`;
         const dataUrl = await exportElementToPdf(canvasRef.current, filename);
         
         confetti({ particleCount: 80, spread: 60, origin: { y: 0.7 } });
@@ -209,7 +209,7 @@ export const CanvasEditor: React.FC<CanvasEditorProps> = ({
       } else {
         const dataUrl = await toPng(canvasRef.current, { cacheBust: true, quality: 0.95 });
         const link = document.createElement('a');
-        const filename = `DesignCraft_${Date.now()}.png`;
+        const filename = `PosterForge_${Date.now()}.png`;
         link.download = filename;
         link.href = dataUrl;
         link.click();

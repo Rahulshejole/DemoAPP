@@ -50,7 +50,7 @@ export const Header: React.FC<HeaderProps> = ({
       {/* Center Brand Title */}
       <div className="text-center">
         <h1 className="text-sm font-extrabold text-white tracking-tight flex items-center gap-1">
-          <span>DesignCraft</span>
+          <span>PosterForge</span>
           <Sparkles className="w-3 h-3 text-amber-300 animate-pulse" />
         </h1>
       </div>

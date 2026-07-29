@@ -97,7 +97,7 @@ export const DigitalCardModal: React.FC<DigitalCardModalProps> = ({
 
           {/* Footer watermark */}
           <div className="pt-2 border-t border-white/10 flex items-center justify-between text-[9px] text-gray-400 font-medium">
-            <span>DesignCraft Digital Card</span>
+            <span>PosterForge Digital Card</span>
             <span>{profile.partyName}</span>
           </div>
         </div>

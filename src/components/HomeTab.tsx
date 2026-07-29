@@ -322,7 +322,7 @@ export const HomeTab: React.FC<HomeTabProps> = ({
             Special Offer
           </span>
           <h4 className="text-xs font-bold text-gray-900 mt-1">Wallet Super Saver Discount</h4>
-          <p className="text-[11px] text-gray-600">Recharge DesignCraft Wallet & Get ₹100 Cashback!</p>
+          <p className="text-[11px] text-gray-600">Recharge PosterForge Wallet & Get ₹100 Cashback!</p>
         </div>
         <button
           onClick={() => alert('Recharge offer applied to account!')}

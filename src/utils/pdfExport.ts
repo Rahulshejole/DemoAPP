@@ -7,7 +7,7 @@ import { UserProfile, DraftItem, DownloadedItem, EventReminder } from '../types'
  */
 export async function exportElementToPdf(
   element: HTMLElement,
-  filename: string = `DesignCraft_Design_${Date.now()}.pdf`
+  filename: string = `PosterForge_Design_${Date.now()}.pdf`
 ): Promise<string> {
   // Capture high-quality PNG
   const dataUrl = await toPng(element, { cacheBust: true, quality: 0.98 });
@@ -43,7 +43,7 @@ export async function exportElementToPdf(
  */
 export async function exportImageToPdf(
   dataUrl: string,
-  filename: string = `DesignCraft_Design_${Date.now()}.pdf`
+  filename: string = `PosterForge_Design_${Date.now()}.pdf`
 ): Promise<void> {
   const img = new Image();
   img.src = dataUrl;
@@ -68,7 +68,7 @@ export async function exportImageToPdf(
 }
 
 /**
- * Generates and downloads a complete multi-page PDF Dossier of the entire DesignCraft Project.
+ * Generates and downloads a complete multi-page PDF Dossier of the entire PosterForge Project.
  */
 export async function exportFullProjectDossierToPdf(data: {
   profile: UserProfile;
@@ -99,7 +99,7 @@ export async function exportFullProjectDossierToPdf(data: {
   doc.setTextColor(255, 255, 255);
   doc.setFontSize(22);
   doc.setFont('helvetica', 'bold');
-  doc.text('DesignCraft Project Portfolio', 14, 18);
+  doc.text('PosterForge Project Portfolio', 14, 18);
 
   doc.setFontSize(10);
   doc.setFont('helvetica', 'normal');
@@ -250,8 +250,8 @@ export async function exportFullProjectDossierToPdf(data: {
   doc.setTextColor(255, 255, 255);
   doc.setFontSize(10);
   doc.setFont('helvetica', 'bold');
-  doc.text('DesignCraft — Complete Poster Studio', 14, 290);
+  doc.text('PosterForge — Complete Poster Studio', 14, 290);
 
-  doc.save(`DesignCraft_Full_Project_${Date.now()}.pdf`);
+  doc.save(`PosterForge_Full_Project_${Date.now()}.pdf`);
 }
 

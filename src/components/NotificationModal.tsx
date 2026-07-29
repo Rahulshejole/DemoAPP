@@ -88,7 +88,7 @@ export const NotificationModal: React.FC<NotificationModalProps> = ({
               <span>Ad-Free Editorial Guarantee</span>
             </div>
             <p className="text-[#6B7280]">
-              DesignCraft is completely ad-free. Enjoy instant canvas editing with pre-filled party logos and profile details.
+              PosterForge is completely ad-free. Enjoy instant canvas editing with pre-filled party logos and profile details.
             </p>
           </div>
         </div>

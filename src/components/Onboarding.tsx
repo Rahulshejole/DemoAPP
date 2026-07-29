@@ -49,7 +49,7 @@ export const Onboarding: React.FC<OnboardingProps> = ({ onComplete }) => {
         <div className="w-20 h-20 rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center border border-white/20 mb-6 shadow-2xl">
           <Vote className="w-10 h-10 text-[#FF6B35]" />
         </div>
-        <h1 className="text-3xl font-bold tracking-tight text-center">DesignCraft</h1>
+        <h1 className="text-3xl font-bold tracking-tight text-center">PosterForge</h1>
         <p className="text-sm font-medium text-slate-300 mt-2 text-center max-w-xs">
           Political & Business Graphic Studio
         </p>
