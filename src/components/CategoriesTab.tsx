@@ -12,7 +12,7 @@ export const CategoriesTab: React.FC<CategoriesTabProps> = ({
   onSelectTemplate,
   onOpenQuickTool,
 }) => {
-  const [selectedCategoryKey, setSelectedCategoryKey] = useState<string | null>('political');
+  const [selectedCategoryKey, setSelectedCategoryKey] = useState<string | null>(null);
   const [selectedSubCategory, setSelectedSubCategory] = useState<string>('All');
   const [selectedLanguageFilter, setSelectedLanguageFilter] = useState<string>('All');
 
