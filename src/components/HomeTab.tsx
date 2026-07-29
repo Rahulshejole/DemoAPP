@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { 
   Search, Vote, Briefcase, Quote, Sparkles, Heart, Edit2, Calendar, 
-  ChevronRight, Gift, Cake, MessageCircle
+  ChevronRight, Gift, Cake
 } from 'lucide-react';
 import { DesignTemplate, DraftItem, EventReminder, UserProfile } from '../types';
 
@@ -373,17 +373,6 @@ export const HomeTab: React.FC<HomeTabProps> = ({
       </section>
 
       {/* Floating WhatsApp Action Button (48px, proper margin from bottom nav) */}
-      <button
-        onClick={() => {
-          const whatsappUrl = `https://wa.me/918554850850?text=${encodeURIComponent("Namaste! I need assistance with my DesignCraft poster designs.")}`;
-          window.open(whatsappUrl, '_blank');
-        }}
-        id="home-floating-whatsapp-btn"
-        className="fixed bottom-20 right-4 sm:bottom-24 sm:right-6 z-40 w-12 h-12 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white flex items-center justify-center shadow-xl transition-transform active:scale-90 border-2 border-white"
-        title="WhatsApp Support"
-      >
-        <MessageCircle className="w-6 h-6 fill-current text-white" />
-      </button>
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Bell, HelpCircle, Sparkles } from 'lucide-react';
+import { Bell, Sparkles } from 'lucide-react';
 import { UserProfile } from '../types';
 
 interface HeaderProps {
@@ -57,19 +57,6 @@ export const Header: React.FC<HeaderProps> = ({
 
       {/* Right Actions */}
       <div className="flex items-center gap-1.5">
-        {/* Support Icon Button */}
-        <button
-          onClick={() => {
-            const whatsappUrl = `https://wa.me/918554850850?text=${encodeURIComponent("Namaste! I need help with DesignCraft Poster Studio.")}`;
-            window.open(whatsappUrl, '_blank');
-          }}
-          className="p-1.5 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors border border-white/10"
-          title="Customer Support"
-          id="header-support-btn"
-        >
-          <HelpCircle className="w-4 h-4 text-white" />
-        </button>
-
         {/* Notification Bell */}
         <button
           onClick={onOpenNotifications}
