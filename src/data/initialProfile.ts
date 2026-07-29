@@ -1,7 +1,7 @@
 import { UserProfile } from '../types';
 
 export const initialProfile: UserProfile = {
-  name: "Sonia Gandhi",
+  name: "Sonia Patil",
   designation1: "Member of Parliament - Rae Bareli",
   designation2: "Former President - Indian National Congress",
   contactNumber: "09768997272",

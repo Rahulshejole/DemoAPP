@@ -38,7 +38,7 @@ export default function App() {
     if (saved) {
       const savedProfile = JSON.parse(saved);
       // If saved name matches old default, reset to new initialProfile
-      if (savedProfile.name === "सौ. स्नेहा रमेश आंब्रे") {
+      if (savedProfile.name === "सौ. सोनिया गांधी") {
         localStorage.removeItem('politcraft_user_profile');
         return initialProfile;
       }
